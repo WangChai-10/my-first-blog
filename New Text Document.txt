@@ -1,0 +1,10 @@
+C:\Python37\python -m venv myvenv
+myvenv\Scripts\activate
+pip install django
+django-admin.py startproject mystie
+cd mysite
+python manage.py migrate
+python manage.py runserver
+python manage.py startapp blog
+python manage.py makemigrations blog
+python manage.py migrate blog
